@@ -17,7 +17,7 @@ document.getElementById("resumirBtn").addEventListener("click", async () => {
 
       resultadoDiv.innerText = "Resumindo localmente...";
 
-      // Chama a função de resumo simples
+      
       const resumo = resumirTextoSimples(selectedText, 5);
 
       resultadoDiv.innerText = resumo || "Não foi possível gerar resumo.";
@@ -25,7 +25,6 @@ document.getElementById("resumirBtn").addEventListener("click", async () => {
   );
 });
 
-// Função para resumir texto localmente
 function resumirTextoSimples(texto, maxFrases = 5) {
   const frases = texto.match(/[^\.!\?]+[\.!\?]+/g) || [];
   return frases.slice(0, maxFrases).join(' ').trim();
