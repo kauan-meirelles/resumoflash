@@ -1,0 +1,21 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 15px;
+  width: 250px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+#resultado {
+  margin-top: 15px;
+  font-size: 14px;
+  white-space: pre-wrap;
+}
